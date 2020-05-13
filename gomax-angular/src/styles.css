@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*height: 100%;*/
+    position: relative;
+    background-color: white;
+    color: black;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+table {
+    width: 100%;
+}
+
+.button-row button {
+    margin: 10px;
+
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+
+}
+
+main {
+    width: 100%;
+    top: 45px;
+    left: 0;
+    position: relative;
+    overflow: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.film-list {
+    margin-top: 50px;
+}
+
+.footer {
+    justify-content: center;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

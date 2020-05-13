@@ -1,0 +1,12 @@
+<mat-card class="film-card ">
+    <mat-card-content>
+        <img class="film-img" mat-card-image src="{{ film.Poster }}" alt="">
+    </mat-card-content>
+    <a>
+        <mat-card-actions class="displayButton">
+            <button class="button" mat-raised-button [routerLink]="['details/'+ film.id]">
+                <h2 class="label success new-label"><span class="align">{{ film.Title}}</span></h2>
+            </button>
+        </mat-card-actions>
+    </a>
+</mat-card><br>

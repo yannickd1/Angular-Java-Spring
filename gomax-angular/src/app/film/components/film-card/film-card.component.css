@@ -1,0 +1,47 @@
+/* .film-card {
+    width: auto;
+    margin-left: 50px;
+    text-align: center;
+} */
+
+
+.film-card {
+    max-width: 350px;
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+.film-img {
+    background-size: auto;
+    height: 425px;
+    width: 280px;
+}
+
+button:hover h2.new-label span {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+button:hover h2.new-label:after {
+    content: 'Infos & séances';
+    animation: fadeIn 1.2s;
+}
+
+.button {
+    width: 250px;
+    height: 70px;
+}
+
+.button:hover {
+    background-color: #FED740;
+}

@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+} 
+
+#bouton-panier {
+    text-align: center;
+    margin: 25px;
+}
+
+.mat-raised-button {
+    color:white;
+    background-color: black;
+}
+

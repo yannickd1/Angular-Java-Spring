@@ -1,0 +1,8 @@
+<div class="example-button-row {{ seance.date_seance | date : 'EEEE'}} "
+    style="margin-top: 8px; margin-left: 20px; display: inline-block; justify-content: flex-start;">
+    <div style="text-align: center;">
+        <h4>{{seance.date_seance | date: 'dd/MM' }}</h4>
+        <button mat-raised-button color="accent" [disabled]="nbDePlacesRestantes == 0" [routerLink]="['/tarif']"
+            (click)="addSeanceToCommande(seance)">{{ seance.date_seance | date:"HH:mm" }}</button>
+    </div>
+</div>

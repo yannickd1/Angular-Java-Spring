@@ -1,0 +1,30 @@
+<!--<h2>Récapitulatif de la commande</h2>-->
+<div *ngIf="commande != undefined">
+    <mat-toolbar color="primary">
+        <span>Votre commande s'élève à </span>
+        <span class="example-spacer"></span>
+        <span>{{totalCommande | currency:'EUR'}}</span>
+        <button mat-raised-button color="accent" *ngIf="!btnDisable" (click)="payer()">Payer</button>
+    </mat-toolbar>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+        Film
+        </mat-expansion-panel-header>
+        <app-film-summary [film]="film" [dateSeance]="commande.seance.date_seance"></app-film-summary>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+        Places
+        </mat-expansion-panel-header>
+        <app-tarif-list></app-tarif-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel *ngIf="commande.snacks.length > 0">
+        <mat-expansion-panel-header>
+        Snacks
+        </mat-expansion-panel-header>
+        <app-panier></app-panier>
+    </mat-expansion-panel>
+</div>

@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+    <span>Vous pouvez ajouter des snacks à votre commande, si vous le souhaitez</span>
+</mat-toolbar>
+<app-snack-list></app-snack-list>
+<!-- <app-snack-form (submitProduct)="addSnack($event)"></app-snack-form> -->
+<div id="bouton-panier">
+    <button (click)="filtrerSnacksIncrementes()" [routerLink]="['/summary']" mat-raised-button>Finaliser votre
+        réservation</button>
+</div>

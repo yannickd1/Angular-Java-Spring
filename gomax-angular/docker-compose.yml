@@ -1,0 +1,16 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - "8080:80"
+  dbfilm:
+    image: clue/json-server
+    ports: 
+      - "3004:80"
+    volumes:
+      - /datas/db.json:/data/db.son
+
+ 

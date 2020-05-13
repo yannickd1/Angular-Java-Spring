@@ -1,0 +1,21 @@
+<!--Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+<ng-container *ngIf="siege.type !== 'none'">
+  <div [ngStyle]="{'background': siege.available === true ? 'linear-gradient(to top, #990033 0%, #cc0000 100%)' : 'grey'}" class="siege" (click)="toggleAvailability(siege)">
+    <span>{{rowId + siege.position}}</span>
+    <!--<img src="../../../../assets/seat.svg"/>-->
+    <!-- <svg class="seat" width="75" height="75">
+      <rect x="5" y="5" rx="5" ry="5" width="50" height="50"/>
+      Sorry, your browser does not support inline SVG.
+    </svg> -->
+  </div>
+</ng-container>
+<ng-container *ngIf="siege.type === 'none'">
+  <div class="corridor">
+  <!--<img src="../../../../assets/seat.svg"/>-->
+    <!-- <svg class="seat" width="75" height="75">
+      <rect x="5" y="5" rx="5" ry="5" width="50" height="50"/>
+      Sorry, your browser does not support inline SVG.
+    </svg> -->
+  </div>
+</ng-container>
+

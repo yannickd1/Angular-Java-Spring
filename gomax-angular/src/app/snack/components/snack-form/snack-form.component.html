@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span>Veuillez ajouter vos Snack's</span>
+</mat-toolbar>
+<div id="form-list">
+  <form *ngFor="let s of snacks" class="exemple-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nom du snack" name="name" type="text" [(ngModel)]="s.name" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Url de l'image" name="image" type="text" [(ngModel)]="s.image" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Prix" name="price" type="text" [(ngModel)]="s.price" />
+    </mat-form-field>
+  </form>
+</div>
+<div id="boutons">
+  <button (click)="actionBtnPlusForm($event)" name="plus" mat-mini-fab data-field="quant[0]">+</button>
+  <br />
+  <button (click)="saveListeSnack($event)" name="submit" mat-raised-button color="primary">Add snack(s)</button>
+</div>

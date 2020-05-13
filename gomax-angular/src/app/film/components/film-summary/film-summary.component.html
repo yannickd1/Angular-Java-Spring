@@ -1,0 +1,9 @@
+<div *ngIf="film" class="film-card">
+        <img class="film-img" src="{{ film.Poster }}" alt="image film">
+        <span class="title">{{ film.Title }}</span>
+        <span class="date">{{dateSeance | date:'fullDate'}}</span>
+   <!-- <mat-card>
+        <img mat-card-image class="film-img" src="{{ film.Poster }}" alt="image film">
+        <mat-card-subtitle>{{ film.Title }}</mat-card-subtitle>
+    </mat-card> -->
+</div>

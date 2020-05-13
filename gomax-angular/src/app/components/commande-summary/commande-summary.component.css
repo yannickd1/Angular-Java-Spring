@@ -1,0 +1,11 @@
+h2 {
+    text-align : center;
+}
+
+mat-panel-title {
+    justify-content: center !important;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}

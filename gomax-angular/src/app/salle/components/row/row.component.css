@@ -1,0 +1,9 @@
+.row {
+    margin : auto;
+    width: max-content;
+    max-height: 30px;
+  }
+
+.rowId{
+  margin-left: 15%;
+}

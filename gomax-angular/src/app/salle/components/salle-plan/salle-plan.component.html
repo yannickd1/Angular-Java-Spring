@@ -1,0 +1,21 @@
+<mat-toolbar *ngIf="this.visible === true" color="primary">
+    <mat-toolbar-row>
+        <span>Vous pouvez choisir {{nbDeSiegesASelectionner}} sieges si vous le souhaitez</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="nbSieges < 3 && majorations != undefined">
+        <span>Le choix des sièges est sujet à une majoration de {{ getMajorationByName("siege").remise | percent:'1.2-2'}}</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="nbSieges > 3 && majorations != undefined">
+        <span>Le choix des sièges est sujet à une majoration de {{ getMajorationByName("groupe").remise | percent:'1.2-2'}}</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="plan">
+  <div class="salle" *ngIf="plan !== undefined && siegesUsed !== undefined">
+    <app-row *ngFor="let r of plan.row" [row]=r [nbSieges]="nbDeSiegesASelectionner" [siegesUsed]="siegesUsed"
+             (calculSiegesRestantsASelectionner)="calculSieges($event)"></app-row>
+    </div>
+    <div class="example-button-row">
+        <button class="btnRetour" *ngIf="this.visible === true" mat-raised-button color="warn">Retour</button>
+        <button mat-raised-button color="primary" class="btnSuivant" [routerLink]="['/snacks']">Suivant</button>
+    </div>
+</div>

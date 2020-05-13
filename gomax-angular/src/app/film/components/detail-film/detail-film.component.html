@@ -1,0 +1,46 @@
+<div class="container" style="margin-bottom: 80px; margin-top: 95px;">
+
+    <div class="example-button-row stickyBtn" style="margin-top: 15px;margin-left: 10px;">
+        <button class="btnBack" mat-raised-button [routerLink]="['']">
+            <mat-icon class="arrowBack">arrow_back</mat-icon>
+        </button>
+    </div>
+
+    <div *ngIf="film">
+        <h1>{{ film.Title }}</h1>
+        <div class="film-infos">
+            <div class="afficheFilm">
+                <mat-card>
+                    <img style="width: 300px" mat-card-image src="{{ film.Poster }}" alt="image film">
+                </mat-card>
+            </div>
+
+            <div class="list">
+                <mat-card class="cardInfos">
+                    <mat-list>
+                        <mat-list-item>
+                            <p>Genre: <span>{{ film.Genre }}</span></p>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p>Durée: <span>{{ film.Runtime }}</span></p>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p>Résumé: <span>{{ film.Plot }}</span></p>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p>Acteurs: <span>{{ film.Actors }}</span></p>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card>
+            </div>
+        </div>
+        <div>
+
+            <h1>Séances: </h1>
+
+            <app-seance-list></app-seance-list>
+        </div>
+
+    </div>
+
+</div>

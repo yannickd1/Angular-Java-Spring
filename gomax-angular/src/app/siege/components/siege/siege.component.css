@@ -1,0 +1,17 @@
+.siege {
+  margin-left: 1px;
+  display: inline-block;
+  height: 40px;
+  width: 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 10px;
+  color: goldenrod;
+  text-align: center;
+}
+
+.corridor {
+  display: inline-block;
+  width: 30px;
+}
+

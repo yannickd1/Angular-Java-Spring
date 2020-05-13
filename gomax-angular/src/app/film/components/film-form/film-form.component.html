@@ -1,0 +1,21 @@
+<form [formGroup]="filmForm" (ngSubmit)="saveFilm()">
+    <mat-form-field>
+        <input matInput placeholder="Title" name="Title" formControlName="Title">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Runtime" name="Runtime" formControlName="Runtime">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Genre" name="Genre" formControlName="Genre">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Plot" name="Plot" formControlName="Plot">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Actors" name="Actors" formControlName="Actors">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Poster" name="Poster" formControlName="Poster">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" [disabled]="!filmForm.valid">Ajouter</button>
+</form>

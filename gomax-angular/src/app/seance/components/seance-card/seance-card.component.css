@@ -1,0 +1,9 @@
+.seance-card {
+    width: auto;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.horaire:hover {
+    background-color: #FED740;
+}

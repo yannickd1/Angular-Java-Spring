@@ -1,0 +1,9 @@
+.logo {
+    width: 92px;
+    height: 93px;
+    margin-right: 20px;
+}
+
+.mat-toolbar.mat-accent {
+    height: 100px;
+} 

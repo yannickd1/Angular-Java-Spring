@@ -1,0 +1,80 @@
+.afficheFilm {
+    margin-left: 60px;
+}
+
+h1 {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.list {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+.film-infos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-list-base .mat-list-item {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .film-infos {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+.btnBack {
+    width: 120px;
+    height: 50px;
+    font-size: large;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btnBack:hover {
+    background-color: #FED740;
+}
+
+.stickyBtn {
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    z-index: 1;
+    top: 105px;
+}
+
+.film-infos {
+    justify-content: flex-start;
+}
+
+span {
+    font-weight: normal;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cardInfos {
+    width: 800px;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
